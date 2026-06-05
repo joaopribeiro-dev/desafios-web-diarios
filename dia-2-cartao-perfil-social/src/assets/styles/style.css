@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+    color: white;
+    height: 100vh; 
+}
+.cartao-perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px;
+    gap: 15px;
+}
+.foto-perfil {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+.sobre-perfil {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+.sobre-perfil > p {
+    width: 300px;
+}
+.cartao-texto {
+    font-size: 18px;
+
+    display: flex;
+    gap: 20px;
+}
+.cartao-botao > button {
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    
+    padding: 8px 50px;
+}
+.cartao-botao {
+    display: flex;
+    gap: 25px;
+}
+.cartao-botao > .cartao-botao-2 {
+    background-color: rgb(65, 65, 65);
+}
+hr {
+    width: 96%;
+    margin: 20px auto;
+    border: 1px solid white;
+}
+.cartao-posts {
+    display: flex;
+
+    padding: 15px;
+    gap: 75px;
+}
+button {
+    cursor: pointer;
+}
+.cartao-posts > button {
+    background: none;
+    border-bottom: 5px solid transparent;
+}
+.cartao-posts > button:active {
+    border-bottom: 5px solid white;
+}
+@media (max-width: 550px) {
+    .foto-perfil {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .cartao-posts {
+        gap: 25px;
+    }
+}
