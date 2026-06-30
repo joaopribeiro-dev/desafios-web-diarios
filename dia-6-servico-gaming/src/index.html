@@ -8,7 +8,24 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
-    <main>
+    <header>
+        <h2>Vortex Gaming</h2>
+        <input type="checkbox" id="menu">
+        <label for="menu" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="header-nav">
+            <nav>
+                <a href="#planos">Planos</a>
+                <a href="#games">Jogos</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <button>Login/Register</button>
+        </div>
+    </header>
+    <main id="planos">
         <h1>Serviços Cloud Gaming</h1>
         <div class="cards">
             <div class="card">
@@ -43,8 +60,8 @@
             </div>
         </div>
         <hr>
-        <section class="games-inclusos">
-            <h2 class="titulo-games">Games Inclusos</h2>
+        <section id="games" class="games-inclusos">
+            <h2>Games Inclusos</h2>
             <div class="grade-games">
                 <div class="card-games">
                     <img src="./assets/images/assassins-creed-shadows.png" alt="assassins creed shadows">
@@ -79,7 +96,7 @@
             </div>
         </section>
         <hr>
-        <section class="faq-secao">
+        <section id="faq" class="faq-secao">
             <h2>Perguntas Frequentes</h2>
             <details>
                 <summary>Requisitos para o sistema</summary>
